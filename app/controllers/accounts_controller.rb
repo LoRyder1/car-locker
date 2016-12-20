@@ -3,5 +3,6 @@ class AccountsController < ApplicationController
 
   def show
     @user = current_user
+    @garages = Garage.all
   end
 end
