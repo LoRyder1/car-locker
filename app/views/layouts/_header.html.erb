@@ -1,0 +1,13 @@
+<header>
+  <nav>
+    <a class="navbar-brand" href="/">2FA with Authy | Garage Inventory with React.js</a>
+        <% if signed_in? %>
+          Welcome back <%= link_to current_user.name, account_path %>!
+          <%= link_to "Log out", sessions_destroy_path %>
+        <% else %>
+          <%= link_to "Sign Up", new_user_path %> or
+          <%= link_to "Log in", new_session_path %>
+        <% end -%>
+      </p>
+  </nav>
+</header>
