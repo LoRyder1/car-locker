@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :garages do
+    resources :comments
+  end
+
   # Account section
   resource :account, only: [:show]
 

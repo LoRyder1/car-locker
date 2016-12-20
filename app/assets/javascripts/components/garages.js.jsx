@@ -40,8 +40,8 @@ this.Garages = React.createClass({
         <table className='table table-bordered'>
           <thead>
           <tr>
-            <th>Name</th>
-            <th>Car Type</th>
+            <th>Make</th>
+            <th>Model</th>
             <th>Year</th>
             <th>Actions</th>
           </tr>
@@ -64,11 +64,11 @@ this.Garages = React.createClass({
 
 this.GarageForm = React.createClass({
   getInitialState: function() {
-    return { name: '', car_type: '', year: ''};
+    return { make: '', model: '', year: ''};
   },
 
   valid: function() {
-    return this.state.name && this.state.car_type && this.state.year
+    return this.state.make && this.state.model && this.state.year
   },
 
   handleChange: function(e) {
@@ -100,12 +100,12 @@ this.GarageForm = React.createClass({
     return (
       <form className='form-inline' onSubmit={this.handleSubmit}>
         <div className='form-group'>
-          <input type='text' className='form-control' placeholder='Name' name='name'
-            value={curState.name} onChange={this.handleChange} />
+          <input type='text' className='form-control' placeholder='Make' name='make'
+            value={curState.make} onChange={this.handleChange} />
         </div>
         <div className='form-group'>
-          <input type='text' className='form-control' placeholder='Car Type' name='car_type'
-            value={curState.car_type} onChange={this.handleChange} />
+          <input type='text' className='form-control' placeholder='Car Type' name='model'
+            value={curState.model} onChange={this.handleChange} />
         </div>
         <div className='form-group'>
           <input type='number' className='form-control' placeholder='Year' name='year'
@@ -148,8 +148,8 @@ this.Garage = React.createClass({
   handleEdit: function(e) {
     e.preventDefault();
     var data = {
-      name: ReactDOM.findDOMNode(this.refs.name).value,
-      car_type: ReactDOM.findDOMNode(this.refs.car_type).value,
+      make: ReactDOM.findDOMNode(this.refs.make).value,
+      model: ReactDOM.findDOMNode(this.refs.model).value,
       year: ReactDOM.findDOMNode(this.refs.year).value
     }
 
@@ -172,10 +172,10 @@ this.Garage = React.createClass({
     return (
       <tr>
         <td>
-          <input className="form-control" type="text" defaultValue={propCar.name} ref="name" />
+          <input className="form-control" type="text" defaultValue={propCar.make} ref="make" />
         </td>
         <td>
-          <input className="form-control" type="text" defaultValue={propCar.car_type} ref="car_type" />
+          <input className="form-control" type="text" defaultValue={propCar.model} ref="model" />
         </td>
         <td>
           <input className="form-control" type="number" defaultValue={propCar.year} ref="year" />
@@ -194,9 +194,9 @@ this.Garage = React.createClass({
     return (
       <tr>
         <td> 
-          <a href={"garages/" + propCar.id + "-" + propCar.name}>{propCar.name}</a>
+          <a href={"garages/" + propCar.id + "-" + propCar.make}>{propCar.make}</a>
         </td>
-        <td> {propCar.car_type} </td>
+        <td> {propCar.model} </td>
         <td> {propCar.year} </td>
         <td>
           <a className="btn btn-default" onClick={this.handleToggle}>Edit</a>
