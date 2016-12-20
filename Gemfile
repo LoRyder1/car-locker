@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# React frontend
+gem 'react-rails', '~> 1.0'
+
 # Use Authy for 2FA
 gem 'authy', :git => 'https://github.com/authy/authy-ruby.git'
 

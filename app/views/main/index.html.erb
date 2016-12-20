@@ -3,3 +3,5 @@
 <p>Doing two-factor authentication (2FA) at a level of excellence can be tricky. Let's demonstrate how to use <%= link_to "Authy", "http://authy.com" %> (powered by <%= link_to "Twilio", "http://twilio.com" %>) to make implementing 2FA a snap.</p>
 
 <p><%= link_to "Sign up", new_user_path %> or <%= link_to "Log in", new_session_path %> to get started.</p>
+
+<%= react_component 'Garages', { data: @garages } %>
