@@ -14,17 +14,17 @@ For the second factor, we will validate that the user has their mobile phones by
 ## Getting Started
 
   1. clone the program using 
-```
-git clone https://github.com/LoRyder1/car-locker.git
-```
+  ```
+  git clone https://github.com/LoRyder1/car-locker.git
+  ```
   2. navigate to repository
-```
-cd car-locker
-```
+  ```
+  cd car-locker
+  ```
   3. install the required gems using bundler
-```
-bundle install
-```
+  ```
+  bundle install
+  ```
   4. get the app up and running
   ```
   ruby twiml-quickstart.rb
@@ -34,21 +34,21 @@ bundle install
   ngrok http 4567
   ```
   6. Export the environment variables
-```
-export AUTHY_API_KEY=Your Authy API Key
-```
+  ```
+  export AUTHY_API_KEY=Your Authy API Key
+  ```
   7. Run the server
-```
-bundle exec rails s
-```
+  ```
+  bundle exec rails s
+  ```
   8. Expose your application to wider internet using ngrok
-```
-ngrok http 3000
-```
+  ```
+  ngrok http 3000
+  ```
   9. Go to your https://dashboard.authy.com. Add and update endpoint/url with the endpoint you created.
-```
-https://agile-thicket-72889.herokuapp.com/authy/callback
-```
+  ```
+  https://agile-thicket-72889.herokuapp.com/authy/callback
+  ```
   8. Link to [application](https://agile-thicket-72889.herokuapp.com/)
 
 ## Built with
