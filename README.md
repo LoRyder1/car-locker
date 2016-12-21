@@ -1,4 +1,4 @@
-## Two Factor Authentication and Car Inventory(https://agile-thicket-72889.herokuapp.com/)
+## [Two Factor Authentication and Car Inventory](https://agile-thicket-72889.herokuapp.com/)
 
 Two-factor authentication (2FA) in web app with Twilio-powered Authy. 2FA helps further secure your user' data by validating more than just a password. 
 
