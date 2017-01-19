@@ -54,5 +54,6 @@ For the second factor, we will validate that the user has their mobile phones by
 ## Built with
 
 * Ruby - is a dynamic, reflective, object-oriented, general-purpose programming language.
-* Rails - server side web application framework written in Ruby. Uses MVC framework, providing default structures for a database, a web service, and web pages. 
+* Rails - server side web application framework written in Ruby. Uses MVC framework, providing default structures for a database, a web service, and web pages.
+* React.js - javascript library
 * Authy(powered by Twilio) - mobile and desktop app for two-step verifications. more secure, more reliable, more convenient
